@@ -1,0 +1,106 @@
+.popup-gratitube {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: var(--color-accent-bg);
+	padding: 0;
+	border: 0;
+	vertical-align: middle;
+
+	&__inner {
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		align-items: center;
+		gap: 10px;
+		justify-content: center;
+
+		@include mobile {
+			gap: 12px;
+		}
+	}
+
+	&--close {
+		width: 16px;
+		height: 16px;
+		position: relative;
+		margin-left: auto;
+		cursor: pointer;
+
+		&::after,
+		&::before {
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: 0;
+			translate: 0 -50%;
+			width: 100%;
+			height: 2px;
+			background-color: var(--color-light);
+		}
+
+		&::before {
+			transform: rotate(-45deg);
+		}
+		&::after {
+			transform: rotate(45deg);
+		}
+
+		@include mobile {
+			width: 20px;
+			height: 20px;
+		}
+	}
+
+	&__wrapper {
+		background-color: var(--color-light);
+		padding: 28px 21px;
+		display: flex;
+		flex-direction: column;
+		gap: 83px;
+		border: var(--border-big) var(--color-accent-dark);
+		border-radius: var(--border-radius-big);
+		width: 100%;
+
+		@include mobile {
+			padding: 14px 11px;
+		}
+	}
+
+	&__hero {
+		display: flex;
+		flex-direction: column;
+		gap: 45px;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+
+	&__container-text {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+
+	&__title {
+		@include fluid-text(55, 50);
+	}
+
+	&__text {
+		max-width: 393px;
+		margin-inline: auto;
+		color: var(--color-gray);
+
+		@include fluid-text(25, 22);
+	}
+
+	&__link {
+		display: block;
+		text-align: center;
+		align-content: center;
+		max-width: 313px;
+		margin-inline: auto;
+	}
+}

@@ -1,0 +1,122 @@
+.container {
+	max-width: calc(
+		var(--container-width) + var(--container-padding-desktop-x) * 2
+	);
+	margin-inline: auto;
+	padding-inline: var(--container-padding-desktop-x);
+	padding-block: 28px;
+
+	@include mobile {
+		max-width: calc(
+			var(--container-width) + var(--container-padding-mobile-x) * 2
+		);
+		padding-inline: var(--container-padding-mobile-x);
+	}
+}
+
+.visually-hidden {
+	position: absolute !important;
+	width: 1px !important;
+	height: 1px !important;
+	margin: -1px !important;
+	border: 0 !important;
+	padding: 0 !important;
+	white-space: nowrap !important;
+	clip-path: inset(100%) !important;
+	clip: rect(0 0 0 0) !important;
+	overflow: hidden !important;
+}
+
+.active {
+	font-weight: 600;
+}
+
+.desktop-hidden {
+	@include desktop {
+		position: absolute !important;
+		width: 1px !important;
+		height: 1px !important;
+		margin: -1px !important;
+		border: 0 !important;
+		padding: 0 !important;
+		white-space: nowrap !important;
+		clip-path: inset(100%) !important;
+		clip: rect(0 0 0 0) !important;
+		overflow: hidden !important;
+	}
+}
+
+.desktop-hidden-above {
+	@include desktop-above {
+		position: absolute !important;
+		width: 1px !important;
+		height: 1px !important;
+		margin: -1px !important;
+		border: 0 !important;
+		padding: 0 !important;
+		white-space: nowrap !important;
+		clip-path: inset(100%) !important;
+		clip: rect(0 0 0 0) !important;
+		overflow: hidden !important;
+	}
+}
+
+.tablet-hidden {
+	@include tablet {
+		position: absolute !important;
+		width: 1px !important;
+		height: 1px !important;
+		margin: -1px !important;
+		border: 0 !important;
+		padding: 0 !important;
+		white-space: nowrap !important;
+		clip-path: inset(100%) !important;
+		clip: rect(0 0 0 0) !important;
+		overflow: hidden !important;
+	}
+}
+
+.tablet-hidden-above {
+	@include tablet-above {
+		position: absolute !important;
+		width: 1px !important;
+		height: 1px !important;
+		margin: -1px !important;
+		border: 0 !important;
+		padding: 0 !important;
+		white-space: nowrap !important;
+		clip-path: inset(100%) !important;
+		clip: rect(0 0 0 0) !important;
+		overflow: hidden !important;
+	}
+}
+
+.mobile-hidden {
+	@include mobile {
+		position: absolute !important;
+		width: 1px !important;
+		height: 1px !important;
+		margin: -1px !important;
+		border: 0 !important;
+		padding: 0 !important;
+		white-space: nowrap !important;
+		clip-path: inset(100%) !important;
+		clip: rect(0 0 0 0) !important;
+		overflow: hidden !important;
+	}
+}
+
+.mobile-hidden-above {
+	@include mobile-above {
+		position: absolute !important;
+		width: 1px !important;
+		height: 1px !important;
+		margin: -1px !important;
+		border: 0 !important;
+		padding: 0 !important;
+		white-space: nowrap !important;
+		clip-path: inset(100%) !important;
+		clip: rect(0 0 0 0) !important;
+		overflow: hidden !important;
+	}
+}

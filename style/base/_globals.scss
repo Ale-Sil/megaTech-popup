@@ -1,0 +1,49 @@
+.static {
+	overflow: hidden;
+}
+
+body {
+	@include fluid-text(18, 17);
+
+	font-family: var(--font-family-base);
+	font-weight: 400;
+	color: var(--color-light);
+	background-color: var(--color-light);
+	line-height: 1.67;
+}
+
+a,
+button,
+input,
+textarea,
+svg * {
+	transition-duration: var(--transition-duration);
+}
+
+a {
+	@include reset-link;
+}
+
+.title {
+}
+
+h1,
+h2,
+h3,
+h4 {
+}
+
+h1 {
+}
+
+h2 {
+	@include fluid-text(33, 29);
+	color: var(--color-accent-text);
+	line-height: 1.21;
+}
+
+h3 {
+}
+
+h4 {
+}

@@ -1,0 +1,9 @@
+// base style
+@import "./base/normalize", "./base/variables", "./base/media", "./base/mixins",
+	"./base/fonts", "./base/utils", "./base/globals";
+
+// тут записываются статичные блоки header, footer и другие
+
+// тут записываются блоки страницы
+@import "./blocks/button", "./blocks/popup-request", "./blocks/popup-sub",
+	"./blocks/popup-gratitube";

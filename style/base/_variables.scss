@@ -1,0 +1,28 @@
+// тут записываются все переменные, которые будут использоваться от 2х раз
+:root {
+	--color-dark: #3b3b3b;
+	--color-accent-text: #1946c8;
+	--color-accent-bg: #3c60dc;
+	--color-accent-dark: #2145a0;
+	--color-gray: #8c8c8c;
+	--color-gray-light: #a0a3aa;
+	--color-light: #ffffff;
+
+	--border: 1px solid var(--color-accent-bg);
+	--border-big: 2px solid;
+
+	--border-radius: 5px;
+	--border-radius-big: 10px;
+
+	--font-family-base: "Arial", "sans-serif";
+
+	--container-width: 691px;
+
+	--container-padding-desktop-x: 21px;
+	--container-padding-mobile-x: 12px;
+
+	--input-height: 50px;
+	--input-height-mobile: 44px;
+
+	--transition-duration: 0.2s;
+}

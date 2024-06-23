@@ -1,0 +1,58 @@
+@mixin fluid-text($max: 55, $min: 13) {
+	font-size: clamp(#{$min}px, #{$max / 1440 * 100}vw, #{$max}px);
+}
+
+@mixin reset-link {
+	color: inherit;
+
+	&,
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+@mixin reset-button {
+	padding: 0;
+	background-color: transparent;
+	border: 0;
+}
+
+@mixin reset-input {
+	padding: 10px 15px;
+	color: var(--color-gray-light);
+	border: var(--border);
+	border-radius: var(--border-radius);
+	height: var(--input-height);
+
+	&:focus {
+		outline: 0;
+		border: var(--border);
+	}
+
+	@include mobile {
+		height: var(--input-height-mobile);
+	}
+}
+
+@mixin flex-center($isInline: false) {
+	@if $isInline {
+		display: inline-flex;
+	} @else {
+		display: flex;
+	}
+
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin abs-center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	translate: -50% - 50%;
+}
+
+@mixin square($size) {
+	width: $size;
+	aspect-ratio: 1;
+}
