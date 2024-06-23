@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <button class="popup-request--open" type="button">Click to open</button>
+  </div>
+
+
+  <dialog class="popup popup-request">
+    <div class="popup-request__inner container popup--close">
+      <div class="popup--close-btn"></div>
+      <div class="popup-request__wrapper">
+        <div class="popup-request__hero">
+          <div class="popup-request__container-text">
+            <h2 class="popup-request__title">Получите профессиональную консультацию нашего специалиста</h2>
+            <p class="popup-request__text">
+              Перезвоним и поможем с выбором металлорежущего инструмента
+              для вашего производства
+            </p>
+          </div>
+          <figure class="popup-request__image">
+            <img src="./img/image.png" alt="МЕГАТУЛС">
+          </figure>
+        </div>
+        <form action="consultationCall" class="popup-request__form">
+          <div class="popup-request__input-wrapper">
+            <input type="text" name="userName" id="userName" placeholder="ФИО">
+            <input class="input-phone" type="tel" name="userTel" id="userTel" placeholder="+7 999 999 999">
+            <input type="email" name="userEmail" id="userEmail" placeholder="E-mail">
+            <input type="text" name="userOrganization" id="userOrganization" placeholder="Название организации">
+            <textarea maxlength="300" name="userRequest" id="userRequest" placeholder="Ваш запрос"></textarea>
+
+          </div>
+          <label class="popup-request__checkbox-label" for="privacyPolicy">
+            <input type="checkbox" name="privacyPolicy" id="privacyPolicy">
+            <p>
+              Нажимая на кнопку вы подтверждаете, что ознакомлены с <a href="#">политикой конфиденциальности</a>
+            </p>
+          </label>
+          <label class="popup-request__checkbox-label" for="subscriptionSand">
+            <input type="checkbox" name="subscriptionSand" id="subscriptionSand">
+            <p>
+              Подпишитесь на рассылку и получите <span>скидку 10% на первый заказ</span> любого инструмента на нашем
+              сайте
+            </p>
+          </label>
+          <button class="popup-request__btn-sub button button--accent-light" type="button" id="popupSubmit">
+            Оставить заявку
+          </button>
+        </form>
+      </div>
+    </div>
+  </dialog>
+
+  <dialog class="popup popup-sub-thanks">
+    <div class="popup-sub-thanks__inner container popup--close">
+      <div class="popup--close-btn"></div>
+      <div class="popup-sub-thanks__wrapper">
+        <div class="popup-sub-thanks__hero">
+          <figure class="popup-sub-thanks__image">
+            <img src="./img/logo.png" alt="MEGATEC">
+          </figure>
+          <div class="popup-sub-thanks__container-text">
+            <h2 class="popup-sub-thanks__title">Спасибо за подписку!</h2>
+            <p class="popup-sub-thanks__text">
+              Проверьте ваш почтовый ящик
+            </p>
+          </div>
+        </div>
+        <a href="#" class="popup-sub-thanks__link button button--accent-light">На главную</a>
+      </div>
+    </div>
+  </dialog>
+
+  <dialog class="popup popup-gratitube">
+    <div class="popup-gratitube__inner container popup--close">
+      <div class="popup--close-btn"></div>
+      <div class="popup-gratitube__wrapper">
+        <div class="popup-gratitube__hero">
+          <figure class="popup-gratitube__image">
+            <img src="./img/logo.png" alt="MEGATEC">
+          </figure>
+          <div class="popup-gratitube__container-text">
+            <h2 class="popup-gratitube__title">Спасибо!</h2>
+            <p class="popup-gratitube__text">
+              Наш специалист свяжется
+              с Вами в ближайшее время
+            </p>
+          </div>
+        </div>
+        <a href="#" class="popup-gratitube__link button button--accent-light">На главную</a>
+      </div>
+    </div>
+  </dialog>
+  <script src="./js/input-masks.js"></script>
+  <script src="./js/popupReq.js"></script>
+</body>
+
+</html>
